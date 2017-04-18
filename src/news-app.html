@@ -33,10 +33,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         --app-transparent-border-style: 1px solid rgba(255, 255, 255, 0.5);
         --app-button-border-style: 2px solid #222;
         --app-cover-text-color: #FFF;
-        --app-nav-background-color: #222;
-        --app-nav-text-color: #FFF;
-        --app-nav-deselected-text-color: #CCC;
-        --app-nav-selected-background-color: #555;
+        --app-nav-background-color: #FFF;
+        --app-nav-text-color: #222;
+        --app-nav-deselected-text-color: #555;
+        --app-nav-selected-background-color: #333;
 
         --app-sub-section-headline: {
           border-top: var(--app-border-style);
@@ -63,11 +63,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         padding-bottom: 24px;
         text-align: center;
       }
-
+      footer {
+        font-size: 13px;
+        color: #757575;
+      }
       footer a {
         text-decoration: none;
         font-size: 13px;
-        color: #757575;
+        color: #333;
       }
 
       footer a:hover {
@@ -147,7 +150,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </iron-pages>
 
     <footer>
-      <a href="https://www.polymer-project.org/1.0/toolbox/">Made by Polymer</a>
+      © GDG Río de La Plata 2017. Todos los derechos reservados. Desarrollado con ❤️  usando  <a href="https://www.polymer-project.org/1.0/toolbox/">Polymer Toolbox</a>
     </footer>
 
   </template>
@@ -238,7 +241,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       _routePageChanged: function(page) {
         if (!page) {
           // set default route if route path is empty
-          this.set('route.path', 'list/top_stories');
+          this.set('route.path', 'list/eventos');
           return;
         }
         this.page = page;

@@ -59,6 +59,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         max-width: 100%;
       }
 
+      #content .speaker-holder {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+      }
+      #content .speaker-holder h3 {
+        color:rgb(43, 130, 221);
+      }
+      #content .clear-both {
+        clear: both;
+      }
+
+      #content .speaker {
+        width:150px;
+        float:left;
+        margin: 0 10px 5px 0;
+        border:1px solid #ccc;
+        padding: 3px;
+      }
+
+      #content .gris {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
       #content figure {
         margin-left: 0;
         margin-right: 0;
@@ -173,7 +198,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       <aside>
         <div class="ad-container">
-          <news-iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&f=ifr"></news-iframe>
+          <!-- <news-iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&f=ifr"></news-iframe> -->
         </div>
         <a href="#" class="share-link" aria-label="Send by email">
           <iron-icon icon="mail"></iron-icon> Email
@@ -182,10 +207,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <iron-icon icon="share"></iron-icon> Share
         </a>
         <news-side-list class="fade-in" items="[[_slice(category.items, 0, 3)]]">
-          Most Read
+          Lo más leído
         </news-side-list>
         <news-side-list class="fade-in" featured items="[[_slice(category.items, 3, 9)]]">
-          Top Stories
+          Lo más nuevo
         </news-side-list>
       </aside>
     </div>

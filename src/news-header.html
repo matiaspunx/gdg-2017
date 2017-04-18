@@ -41,6 +41,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-overflow: ellipsis;
         overflow: hidden;
         margin: 0 16px;
+        display: none;
       }
 
       .logo a {
@@ -53,6 +54,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: inline-block;
         pointer-events: auto;
         color: inherit;
+      }
+      .logo-gdg {
+        background-image: url(/images/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;auto;
+        width: 300px;
+        height:40px;
       }
 
       .menu-list {
@@ -143,6 +152,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           padding: 6px 0;
           border-top: var(--app-transparent-border-style);
           border-bottom: var(--app-transparent-border-style);
+          display: none;
         }
 
         :host([page=article]) header .logo,
@@ -173,6 +183,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           font-size: 39px;
         }
 
+        .logo-gdg {
+          background-image: url(/images/logo.png);
+        }
+
         .logo-toolbar {
           margin-top: 40px;
           height: 45px;
@@ -200,7 +214,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         .sticky-nav .logo {
           font-size: 23px;
-          padding-top: 16px;
+          padding-top: 8px;
         }
 
         .sticky-nav .date-line {
@@ -252,7 +266,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-icon-button class="mobile-toggle-drawer-btn" icon="menu"
             on-click="_toggleDrawer" aria-label="Main navigation"></paper-icon-button>
         <div class="logo" main-title>
-          <a href="/" aria-label$="[[_computeAppHomeLabel(appTitle)]]">[[appTitle]]</a>
+          <a href="/" aria-label$="[[_computeAppHomeLabel(appTitle)]]"><div class="logo-gdg"></div></a>
         </div>
       </app-toolbar>
       <div class="date-line" role="heading">
@@ -278,7 +292,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           icon="[[_menuIcon(drawerOpened)]]" on-click="_toggleDrawer"></paper-icon-button>
         <div class="sticky-nav-center">
           <div class="logo">
-            <a href="/" aria-label$="[[_computeAppHomeLabel(appTitle)]]">[[appTitle]]</a>
+            <a href="/" aria-label$="[[_computeAppHomeLabel(appTitle)]]"><div class="logo-gdg"></div></a>
           </div>
           <div class="date-line" role="heading">
             [[category.title]] <span aria-hidden="true">&nbsp; &middot; &nbsp;</span> [[_currentTime()]]
