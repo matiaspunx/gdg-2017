@@ -1,17 +1,17 @@
-# NEWS
+# Nuevo sitio de GDG Río de La Plata
 
-## Prerequisites
+## Prerequisitos
 
 ### Polymer CLI
 
-Install [polymer-cli](https://github.com/Polymer/polymer-cli):
-(Need at least npm v0.3.0)
+Instalar [polymer-cli](https://github.com/Polymer/polymer-cli):
+(Necesita al menos npm v0.3.0)
 
     npm install -g polymer-cli
 
 ### Google App Engine SDK
 
-Install [Google App Engine SDK](https://cloud.google.com/appengine/downloads)
+Instalar [Google App Engine SDK](https://cloud.google.com/appengine/downloads)
 
 ## Setup
 
